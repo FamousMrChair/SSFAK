@@ -21,15 +21,16 @@ app.run()  # Q5: Where have you seen similar constructs in other languages?
 '''
 DISCO:
 QCC:
-0. 
-1. 
-2. 
-3. 
-4. 
-5. 
+0. A java overloaded constructor.
+1. Separating and used in directory path and URLs.
+2. The print statement should print the URL or link to the website created by the flask , as __name__ is probably a container that stores the website information
+inside the terminal for easy access for the user.
+3. Prints the URL/ link to the website
+4. On the website, because we tested it and it does appear on the website.
+5. Running methods in java requires an object with the class calling upon methods within the class, and app.run() looks very familiar to OOP.
 ...
 INVESTIGATIVE APPROACH:
-<Your concise summary of how
- you and your team set about
- "illuminating the cave of ignorance" here...>
+
+We were kool kids and didn't use the internet and instead bash our heads into the wall multiple times trying to figure out what flask even is, and after multiple tests
+we concluded that it's very similar to java's object oriented programming with its incorperation of constructions and using objects to call upon methods. 
 '''
