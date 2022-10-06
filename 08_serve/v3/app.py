@@ -41,7 +41,9 @@ def hello_world():
 
     occupation: str = pick_rand_weighted(krewes)
     print(occupation)
-    return occupation  # ...
+    
+    result = 'GGG Rendition #2: Kevin Xiao + FamousMrTable, Jeffrey Zou + Like, Vivian Graeber + Squishy' + krewes + occupation
+    return result  # ...
 
 app.run()  # ...
                 
