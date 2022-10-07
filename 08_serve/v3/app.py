@@ -13,7 +13,7 @@ def build_dict(input: str) -> dict[str, float]:
     with open(input, 'r') as f:
         lines: list[str] = f.readlines()
 
-    for i in range(1, len(lines)):
+    for i in range(1, len(lines)-1):
         line: str = lines[i].strip() # strip the newline of the end of each line
         line: list[str] = line.rsplit(',', 1) 
         
@@ -41,9 +41,13 @@ def hello_world():
 
     occupation: str = pick_rand_weighted(krewes)
     print(occupation)
+
+    newstring = ''
+    for i in krewes:
+        newstring = newstring + i + " <br>"
     
-    result = 'GGG Rendition #2: Kevin Xiao + FamousMrTable, Jeffrey Zou + Like, Vivian Graeber + Squishy' + krewes + occupation
-    return result  # ...
+    result = 'GGG Rendition #2: Kevin Xiao + FamousMrTable, Jeffrey Zou + Like, Vivian Graeber + Squishy <br> <br> ' + ' Random occupation: ' + occupation + ' <br> <br> ' + newstring
+    return result # ...
 
 app.run()  # ...
                 
