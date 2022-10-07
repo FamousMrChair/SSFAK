@@ -2,7 +2,7 @@
 # SoftDev
 # Oct 2022
 
-# Version 3 : we are now testing
+# Version 3 : we are finished design of the served page
 
 import random
 from flask import Flask
@@ -44,7 +44,7 @@ def hello_world():
 
     newstring = ''
     for i in krewes:
-        newstring = newstring + i + " <br>"
+        newstring = newstring + i + " <br>" #br is adding text to a new line, two <br> create a new empty line
     
     result = 'GGG Rendition #2: Kevin Xiao + FamousMrTable, Jeffrey Zou + Like, Vivian Graeber + Squishy <br> <br> ' + ' Random occupation: ' + occupation + ' <br> <br> ' + newstring
     return result # ...
