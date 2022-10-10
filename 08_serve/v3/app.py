@@ -46,7 +46,7 @@ def hello_world():
     for i in krewes:
         newstring = newstring + i + " <br>" #br is adding text to a new line, two <br> create a new empty line
     
-    result = 'GGG Rendition #2: Kevin Xiao + FamousMrTable, Jeffrey Zou + Like, Vivian Graeber + Squishy <br> <br> ' + ' Random occupation: ' + occupation + ' <br> <br> ' + newstring
+    result = 'GGG Rendition #2: Kevin Xiao + FamousMrTable, Jeffrey Zou + Like, Vivian Graeber + Squishy <br> <br> ' + ' Random occupation: ' + '<a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>' + occupation + "</a>"  + '<br> <br> ' + newstring
     return result # ...
 
 app.run()  # ...
