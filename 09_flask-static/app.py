@@ -1,4 +1,4 @@
-# Clyde 'Thluffy' Sinclair
+# GGG Rendition #2: Vivian Graeber, Jeffrey Zou, Kevin Xiao + Squishy, Like, FamousMrTable
 # SoftDev
 # Oct 2022
 
