@@ -12,8 +12,8 @@ app = Flask(__name__)
 def hello_world():
     print("the __name__ of this module is... ")
     print(__name__)
-    return "No hablo queso!"
+    return "<html> <h1> No hablo queso! </h1> </html>"
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
-    app.run()
+    app.run() # only allowed for "main driver", not for imported modules.
