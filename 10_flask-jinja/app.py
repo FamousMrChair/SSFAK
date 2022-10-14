@@ -2,8 +2,6 @@
 # SoftDev
 # Oct 2022
 
-# DEMO 
-# basics of /static folder
 
 from flask import Flask, render_template #Q0: What will happen if you remove render_template from this line? (log your prediction before you pull the trigger...)
 # The code probably won't run and return some sort of syntax error, or the program runs but there won't be any material shown on the my_foist_template website
