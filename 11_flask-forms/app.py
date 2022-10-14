@@ -45,17 +45,18 @@ def disp_loginpage():
     return render_template( 'login.html' ) # displays website
 '''
 
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/", methods=[ 'POST'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***") # this will display the flask object itself
     print(app)
-    print("***DIAG: request obj ***") # this will display the html template
-    print(request)
-    print("***DIAG: request.args ***") # this will sort any requests the html template requires (form)
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    #print("***DIAG: request obj ***") # this will display the html template
+    #print(request)
+    #print("***DIAG: request.args ***") # this will sort any requests the html template requires (form)
+    #print(request.args)
+
+    print("***DIAG: request.args['username']  ***")
+    print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
     return render_template( 'test.html' ) # displays website
@@ -63,17 +64,18 @@ def disp_loginpage():
 
 
 
-@app.route("/auth") # , methods=['GET', 'POST'])
+@app.route("/auth", methods=[ 'POST'])
 def authenticate():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    #print("***DIAG: request obj ***")
+    #print(request)
+    #print("***DIAG: request.args ***")
+    #print(request.args)]
+    
+    print("***DIAG: request.args['username']  ***")
+    print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
     return "Waaaa hooo HAAAH"  #response to a form submission
