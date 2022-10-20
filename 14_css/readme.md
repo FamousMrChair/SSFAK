@@ -2,12 +2,14 @@
 ## K14
 ### SoftDev
 ### 19-10-2022
-### time spent: 
+### time spent: 0.5 hr
+
 
 DISCO:
-- 
-QCC:
 
+-Refactoring very easy, simply implement flask element to display html templates
+QCC:
+How can we take steps to prep for jinjafying?
 
 
  
