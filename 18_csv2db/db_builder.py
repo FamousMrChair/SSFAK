@@ -46,6 +46,11 @@ command = "insert into urmom values(1000,60,120,1000.0)"
 c.execute(command)
 '''
 
+c.execute('select * from students;')
+
+for i in c.fetchall(): # returns a list of strings
+    print (i) #fetch retrieves the data and then removes it from the table
+
 #==========================================================
 
 db.commit() #save changes
