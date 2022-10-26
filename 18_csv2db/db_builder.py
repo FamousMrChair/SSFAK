@@ -48,8 +48,16 @@ c.execute(command)
 
 c.execute('select * from students;')
 
+'''
+print(c.fetchone())
+print (c.fetchmany(2)) # these two lines will return the first element, and then the next two elements on another line.
+'''
+
+
 for i in c.fetchall(): # returns a list of strings
-    print (i) #fetch retrieves the data and then removes it from the table
+    print (i) #fetch retrieves the data, but it prevents overcounting / double counting
+
+print (c.fetchall()) # will return empty list here
 
 #==========================================================
 
