@@ -1,7 +1,7 @@
-#Clyde "Thluffy" Sinclair
+#Crazy Chatting Chickens : Faiza + Vivian + Kevin
 #SoftDev  
-#skeleton/stub :: SQLITE3 BASICS
 #Oct 2022
+#time spent: 1 hr
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O
