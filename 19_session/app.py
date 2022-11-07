@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from flask import session, redirect
+from flask import session, redirect, url_for
 from markupsafe import escape
 
 
@@ -8,45 +8,33 @@ app = Flask(__name__)    #create Flask object
 
 @app.route("/", methods = ['GET', 'POST'])
 def disp_loginpage():
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    print("***DIAG: request.headers ***")
-    print(request.headers)
-    return render_template( 'login.html', result = '' )
+    print(session)
+    if 'username' in session:
+        return render_template('response.html', username1= session['username'])
+    return redirect(url_for('authenticate'))
 
 
 @app.route("/auth", methods = ['GET', 'POST'])
 def authenticate():
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    print("***DIAG: request.headers ***")
-    print(request.headers)
-    if (request.form['username'] == 'GIRLBOSS' and request.form['password'] == 'slay'):
-        return render_template('response.html', username= request.form["username"])  #response to a form submission
-    else:
-        return render_template('login.html', result = "username or password is incorrect")
+    if 'username' in session:
+        return redirect(url_for('disp_loginpage'))
+    if request.method == 'POST':
+        if (request.form['username'] == 'GIRLBOSS' and request.form['password'] == 'slay'):
+            session['username'] = request.form['username']
+            return redirect(url_for('disp_loginpage'))  #response to a form submission
+        else:
+            return render_template('login.html', result = "username or password is incorrect")
+    return render_template('login.html')
 
-app.secret_key = b'wadsdadwawdswa'
+app.secret_key = 'girlboss'
 
-@app.route("/", methods = ['GET', 'POST'])
+@app.route("/logout", methods = ['GET', 'POST'])
 def logout():
     if 'username' in session:
-        return 'Logged in as %s' %  escape(session['username'])
-    return 'You are not logged in'
+        session.pop('username', None)
+        return redirect(url_for('authenticate'))
+    else: 
+        return redirect(url_for('disp_loginpage'))
 
 
 if __name__ == "__main__": #false if this file imported as module
