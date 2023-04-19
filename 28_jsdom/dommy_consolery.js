@@ -18,7 +18,7 @@
    (delete this block comment once you are done)
 */
 
-// Team GASLIGHTING GATEKEEPING GIRLBOSSES :: Kevin Xiao
+// Team GASLIGHTING GATEKEEPING GIRLBOSSES :: Kevin Xiao + Aden Garbutt
 // SoftDev pd7
 // K28 -- Getting more comfortable with the dev console and the DOM
 // 2023-04-05w
@@ -45,7 +45,7 @@ var o = { 'name' : 'Thluffy',
           age : 1024,
           items : [10, 20, 30, 40],
           morestuff : {a : 1, b : 'ayo'},
-          func : function(x) {
+          func : function(x) {  
             return x+30;
           }
         };
@@ -100,6 +100,18 @@ console.log(fib(2))
 console.log(fib(3))
 console.log(fib(4))
 console.log(fib(5))
+/*
+var fib = function(text) {
+  var list = document.getElementById("theli");
+  var newitem = document.createElement("li");
+  newitem.innerHTML = text;
+  list.appendChild(newitem);
+};
+*/
+
+
+addItem("This is fibonnaci numero uno: " + fib(1));
+
 
 // FAC
 
@@ -117,6 +129,8 @@ console.log(fact(3))
 console.log(fact(4))
 console.log(fact(5))
 
+addItem("This is factorial numero quadro: " + fact(4));
+
 // GCD
 
 var gcd = function(a, b) {
@@ -127,6 +141,8 @@ var gcd = function(a, b) {
   return gcd(b, a % b);
 }
 
+addItem("This is the greatest common denominator or 12 and 8: " + gcd(12, 8))
+
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
@@ -135,4 +151,5 @@ const myFxn = (param1, param2) => {
   return retVal;
 };
 
-
+red()
+stripe()
