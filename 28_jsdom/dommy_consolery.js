@@ -154,8 +154,22 @@ const myFxn = (param1, param2) => {
 red()
 stripe()
 var i = 6;
-var dasbut = document.getElementById("button"); 
+var dasbut = document.getElementById("fib"); 
 dasbut.addEventListener('click', ()=>{
 	addItem(fib(i));
   i++;
+});
+var j = 6;
+var dasbut = document.getElementById("fac"); 
+dasbut.addEventListener('click', ()=>{
+	addItem(fact(j));
+  j++;
+});
+var k = 6;
+var h = 12;
+var dasbut = document.getElementById("gcd"); 
+dasbut.addEventListener('click', ()=>{
+	addItem(gcd(k,h));
+  k++;
+  h++
 });
