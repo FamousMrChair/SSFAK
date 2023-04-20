@@ -153,3 +153,9 @@ const myFxn = (param1, param2) => {
 
 red()
 stripe()
+var i = 6;
+var dasbut = document.getElementById("button"); 
+dasbut.addEventListener('click', ()=>{
+	addItem(fib(i));
+  i++;
+});
