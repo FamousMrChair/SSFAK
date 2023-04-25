@@ -1,6 +1,6 @@
 // Team GASLIGHTING GATEKEEPING GIRLBOSSES :: Kevin Xiao + Aden Garbutt
 // SoftDev pd7
-// K31 -- canvas based JS drawing
+// K31 -- JS PAINT PAINT PAINT!
 // 2023-04-25m
 
 var c = document.getElementById("playground");
