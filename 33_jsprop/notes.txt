@@ -1,0 +1,12 @@
+GGG Part IX - Kevin Xiao & Gitae Park + FamousMrTable & Kwak
+SoftDev pd 7
+4/27/23
+
+
+Bubbling-Phase: When the event's boolean argument is set to true,
+it will be pushed to the front of the queue for the events that the html will be
+looking for. In the case of this assignment, the event was waiting for a mouse
+click, which was the trigger to prompt the html to offer pop-ups.
+
+Capturing-Phase: When the event's boolean argument is set to false, or the boolean
+doesn't show up at all, the event will be placed at the back of the queue.
